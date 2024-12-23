@@ -1,0 +1,26 @@
+.image-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.92/1;
+  overflow: hidden;
+}
+
+.slider-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+/* 페이드 인 애니메이션 */
+.slider-image.fade-in {
+  opacity: 1;
+}
+
+/* 페이드 아웃 애니메이션 */
+.slider-image.fade-out {
+  opacity: 0;
+}

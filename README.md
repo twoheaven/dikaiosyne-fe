@@ -224,7 +224,7 @@ To get started with the project, clone this repository and install the dependenc
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/web_template.git
+git clone https://github.com/twoheaven/web_template.git
 cd web_template
 ```
 

@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 
 const HeaderWrapper = styled.header`
-  background-color: #333;
+  background-color: rgba(251, 251, 251, 0.5); /* 반투명 배경색 설정 */
   color: white;
   padding: 10px 0;
-  text-align: center;
+  text-align: left;
 
   nav ul {
     list-style-type: none;
@@ -17,7 +17,7 @@ const HeaderWrapper = styled.header`
   }
 
   nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
 `;
@@ -25,13 +25,11 @@ const HeaderWrapper = styled.header`
 const Header = () => {
   return (
     <HeaderWrapper>
-      <h1>My Web Template</h1>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/service">Service</a></li>          
+          <li>
+            <a href="/">Home</a>
+          </li>
         </ul>
       </nav>
     </HeaderWrapper>
