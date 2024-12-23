@@ -20,6 +20,15 @@ const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
           overflow: 'hidden', // 이미지가 넘칠 경우 자르기
           borderRadius: '16px', // 모서리 둥글게
           width: '100%',
+          transition: 'transform 0.3s ease, box-shadow 0.3s ease', // 애니메이션 추가
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = 'scale(1.05)'; // 마우스 오버 시 크기 확대
+          e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.15)'; // 그림자 추가
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = 'scale(1)'; // 마우스 벗어나면 크기 원상복귀
+          e.currentTarget.style.boxShadow = 'none'; // 그림자 제거
         }}
       >
         <img
