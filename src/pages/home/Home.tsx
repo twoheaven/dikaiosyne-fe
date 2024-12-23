@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ImageFader from '../../componets/feature/fadeinout/ImageFader';
+import ImageFader from '../../componets/feature/imagefader/ImageFader';
 import About from './about/About';
 import Book from './book/Book';
 
@@ -14,8 +14,12 @@ function Home() {
   return (
     <HomeWrapper>
       <ImageFader />
-      <About />
-      <Book />
+      <div id="about-section">
+        <About />
+      </div>
+      <div id="book-section">
+        <Book />
+      </div>
     </HomeWrapper>
   );
 }
