@@ -5,8 +5,8 @@ import { theme } from './styles/theme'; // theme 임포트
 import Paths from './utils/paths';
 import Layout from './componets/layout/Layout';
 import Home from './pages/home/Home';
-import About from './pages/about/About';
 import { GlobalStyle } from './styles/global';
+import Book from './pages/book/Book';
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path={Paths.Home} element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path={Paths.About} element={<About />} />
+            <Route path={Paths.Book} element={<Book />} />
           </Route>
         </Routes>
       </Router>

@@ -1,8 +1,6 @@
 enum Paths {
   Home = '/',
-  Service = '/service',
-  Contact = '/contact',
-  About = '/about',
+  Book = '/book',
 }
 
 export default Paths;
