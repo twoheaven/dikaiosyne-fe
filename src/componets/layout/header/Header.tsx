@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 import Paths from '../../../utils/paths';
 
 const HeaderWrapper = styled.header`
-  background-color: rgba(251, 251, 251, 0.5); /* 반투명 배경색 설정 */
+  background-color: #ffc898; /* 반투명 배경색 설정 */
+  opacity: 0.8;
   color: white;
   padding: 5px 0;
   display: flex;
