@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import AboutImg from '/src/assets/about/파일 14_Ver 2.0.jpg';
 
 const AboutWrapper = styled.div`
-  padding: 20px;
+  padding: 0px;
   text-align: center;
+  aspect-ratio: 1.92/1;
 `;
 
 const Title = styled.h1`
@@ -20,21 +21,21 @@ const Description = styled.p`
 
 const About: React.FC = () => {
   return (
-    <AboutWrapper>
+    <AboutWrapper style={{ alignContent: 'center' }}>
       <div
         style={{
           display: 'flex',
           justifyContent: 'center',
           alignContent: 'center',
-          gap: '20px',
         }}
       >
         <img
           src={AboutImg}
           style={{
-            width: '20%',
+            width: '27%',
           }}
         />
+        <div style={{ width: '4%' }} />
         <div
           style={{
             textJustify: '-moz-initial',
@@ -49,7 +50,7 @@ const About: React.FC = () => {
             dikaiosyne ; 디카이오쉬네
           </Title>
           <div style={{ height: '20px' }}></div>
-          <div style={{ marginLeft: '30px' }}>
+          <div style={{ marginLeft: '10%', width: '110%' }}>
             <Description>
               하나님의 말씀대로 살고자 하는 이들을 돕습니다.
             </Description>
