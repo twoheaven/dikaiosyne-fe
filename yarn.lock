@@ -212,6 +212,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emailjs/browser@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@emailjs/browser@npm:4.4.1"
+  checksum: 10c0/91c3d1702818dc2db61f382f5295e469ce2e6acb4d683d65239e0a12dea8b635cd8cea60ef9a83f2aa8fce857b1f8f8663e02dcd7f529cbf902f1f0e6d0d1b44
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:1.2.2":
   version: 1.2.2
   resolution: "@emotion/is-prop-valid@npm:1.2.2"
@@ -851,6 +858,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^22.10.2":
+  version: 22.10.2
+  resolution: "@types/node@npm:22.10.2"
+  dependencies:
+    undici-types: "npm:~6.20.0"
+  checksum: 10c0/2c7b71a040f1ef5320938eca8ebc946e6905caa9bbf3d5665d9b3774a8d15ea9fab1582b849a6d28c7fc80756a62c5666bc66b69f42f4d5dafd1ccb193cdb4ac
+  languageName: node
+  linkType: hard
+
 "@types/prop-types@npm:*":
   version: 15.7.14
   resolution: "@types/prop-types@npm:15.7.14"
@@ -1363,6 +1379,13 @@ __metadata:
   version: 1.5.75
   resolution: "electron-to-chromium@npm:1.5.75"
   checksum: 10c0/df769b7a5e9895a8ba8eb7f31b9525a0e00b8aef6e3ecab3faebe90756fc9ac008dddb8d9a2a78d2079cbaebd27da6e1379f77e910163f405bb1a3d622ec4276
+  languageName: node
+  linkType: hard
+
+"emailjs-com@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "emailjs-com@npm:3.2.0"
+  checksum: 10c0/3c6865ce89ebabeccd4f678fbd5f545f58482bb99fc23c17d9cebbf895705275df2da9c6fadaef8148397fe7fcc18cbbe49f9c720b5ad88b2dd6b82680ef169f
   languageName: node
   linkType: hard
 
@@ -3128,6 +3151,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10c0/68e659a98898d6a836a9a59e6adf14a5d799707f5ea629433e025ac90d239f75e408e2e5ff086afc3cace26f8b26ee52155293564593fbb4a2f666af57fc59bf
+  languageName: node
+  linkType: hard
+
 "unique-filename@npm:^4.0.0":
   version: 4.0.0
   resolution: "unique-filename@npm:4.0.0"
@@ -3225,14 +3255,17 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "web_template@workspace:."
   dependencies:
+    "@emailjs/browser": "npm:^4.4.1"
     "@eslint/js": "npm:^9.17.0"
     "@types/axios": "npm:^0.14.4"
+    "@types/node": "npm:^22.10.2"
     "@types/react": "npm:^18.3.17"
     "@types/react-dom": "npm:^18.3.5"
     "@types/react-helmet": "npm:^6"
     "@types/react-scroll": "npm:^1"
     "@vitejs/plugin-react": "npm:^4.3.4"
     axios: "npm:^1.7.9"
+    emailjs-com: "npm:^3.2.0"
     eslint: "npm:^9.17.0"
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-prettier: "npm:^5.2.1"

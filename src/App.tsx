@@ -7,6 +7,7 @@ import Layout from './componets/layout/Layout';
 import Home from './pages/home/Home';
 import { GlobalStyle } from './styles/global';
 import Book from './pages/book/Book';
+import ContactUs from './pages/contactus/ContactUs';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path={Paths.Home} element={<Layout />}>
             <Route index element={<Home />} />
             <Route path={Paths.Book} element={<Book />} />
+            <Route path={Paths.ContactUs} element={<ContactUs />} />
           </Route>
         </Routes>
       </Router>

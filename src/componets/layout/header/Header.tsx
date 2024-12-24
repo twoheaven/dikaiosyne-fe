@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import logo from '/src/assets/logo.svg';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Paths from '../../../utils/paths';
 
 const HeaderWrapper = styled.header`
@@ -18,7 +18,7 @@ const HeaderWrapper = styled.header`
     align-items: center;
     justify-content: flex-start; /* 왼쪽 정렬 */
     padding-left: 20px; /* 왼쪽 여백 */
-    width: 30%;
+    width: 15%;
   }
 
   /* Home 링크를 가운데로 배치 */
@@ -26,7 +26,7 @@ const HeaderWrapper = styled.header`
     display: flex;
     gap: 10px;
     justify-content: center; /* 가운데 정렬 */
-    width: 40%;
+    width: 70%;
   }
 
   /* 링크 기본 스타일 제거 및 색상 설정 */
@@ -43,10 +43,14 @@ const HeaderWrapper = styled.header`
 `;
 
 const Header = () => {
-  const scrollToSection = (id: string) => {
+  const navigate = useNavigate();
+
+  const scrollToSection = (id: string, fallbackPath: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate(fallbackPath);
     }
   };
 
@@ -60,8 +64,11 @@ const Header = () => {
 
       <div className="home-container">
         <Link to={Paths.Home}>Home</Link>
-        <a onClick={() => scrollToSection('about-section')}>About</a>
-        <a onClick={() => scrollToSection('book-section')}>Book</a>
+        <a onClick={() => scrollToSection('about-section', Paths.Home)}>
+          About Us
+        </a>
+        <a onClick={() => scrollToSection('book-section', Paths.Home)}>Shop</a>
+        <Link to={Paths.ContactUs}>Contact Us</Link>
       </div>
     </HeaderWrapper>
   );
