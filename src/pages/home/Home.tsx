@@ -14,15 +14,12 @@ const HomeWrapper = styled.div`
 const Button = styled.button`
   padding: 12px 25px;
   margin: 50px;
-  background: linear-gradient(
-    135deg,
-    #f5d6a5,
-    #eee2d6ff
-  ); /* 베이지 톤의 그라데이션 */
+  background: ${({ theme }) =>
+    theme.colors.primary}; /* 베이지 톤의 그라데이션 */
   color: #3e2a47; /* 다크한 텍스트 색상 */
   border: none;
   border-radius: 5px;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 효과 */

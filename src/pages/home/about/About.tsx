@@ -4,7 +4,7 @@ import AboutImg from '/src/assets/about/파일 14_Ver 2.0.jpg';
 import useIsMobile from '../../../hooks/useIsMobile';
 
 const Title = styled.h1`
-  font-family: 'Pretendard';
+  font-family: 'MaruBuriBold';
 
   font-size: 2rem;
   color: ${({ theme }) => theme.colors.primary};
