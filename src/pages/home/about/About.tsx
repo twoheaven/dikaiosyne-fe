@@ -8,10 +8,15 @@ const Title = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 `;
 
-const Description = styled.p`
+interface DescriptionProps {
+  isMobile: boolean;
+}
+
+const Description = styled.p<DescriptionProps>`
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.text};
-  text-align: left; /* 텍스트 왼쪽 정렬 */
+  text-align: ${({ isMobile }) =>
+    isMobile ? 'center' : 'left'}; /* 모바일일 경우 center, 아니면 left */
 `;
 
 const AboutWrapper = styled.div`
@@ -48,30 +53,36 @@ const About: React.FC = () => {
           >
             <Title>dikaiosyne ; 디카이오쉬네</Title>
             <div style={{ height: '20px' }} />
-            <Description>
+            <Description isMobile={isMobile}>
               하나님의 말씀대로 살고자 하는 이들을 돕습니다.
             </Description>
-            <Description>
-              하나님 그 분은 그분 자체가 ‘위로’이시고 ‘사랑’이신 것을 압니다.
+            <Description isMobile={isMobile}>
+              하나님 그 분은 그분 자체가 ‘위로’이시고
             </Description>
-            <Description>
-              하지만, 우리는 ‘위로’와 ‘사랑’을 찾아 다른 것에 쉽게 눈을 돌리곤
-              합니다.
+            ‘사랑’이신 것을 압니다.
+            <Description isMobile={isMobile}>
+              하지만, 우리는 ‘위로’와 ‘사랑’을 찾아
             </Description>
-            <Description>막연하게, 어렴풋하게 알던</Description>
-            <Description>
-              위로, 사랑, 지혜, 거룩.. 하나님 그분의 속성들, 그 가치가 명확해 질
-              때,
+            다른 것에 쉽게 눈을 돌리곤 합니다.
+            <div style={{ height: '12px' }} />
+            <Description isMobile={isMobile}>
+              막연하게, 어렴풋하게 알던 위로, 사랑, 지혜, 거룩..
             </Description>
-            <Description>
-              우리는 삶에서 살아 움직이시는 하나님과 동행할 것입니다.
+            <Description isMobile={isMobile}>
+              하나님 그분의 속성들, 그 가치가 명확해 질 때,
             </Description>
-            <Description>
-              다카이오쉬네는 막연하던 그 가치가 명확해지는 경험을 전달합니다.
+            <Description isMobile={isMobile}>
+              우리는 삶에서 살아 움직이시는
             </Description>
+            하나님과 동행할 것입니다.
+            <Description isMobile={isMobile}>
+              다카이오쉬네는 막연하던 그 가치가
+            </Description>
+            명확해지는 경험을 전달합니다.
           </div>
         </div>
       ) : (
+        // PC 레이아웃
         <AboutWrapper style={{ alignContent: 'center' }}>
           <div
             style={{
@@ -103,27 +114,29 @@ const About: React.FC = () => {
               </Title>
               <div style={{ height: '20px' }}></div>
               <div style={{ marginLeft: '10%', width: '110%' }}>
-                <Description>
+                <Description isMobile={isMobile}>
                   하나님의 말씀대로 살고자 하는 이들을 돕습니다.
                 </Description>
-                <Description>
+                <Description isMobile={isMobile}>
                   하나님 그 분은 그분 자체가 ‘위로’이시고 ‘사랑’이신 것을
                   압니다.
                 </Description>
-                <Description>
+                <Description isMobile={isMobile}>
                   하지만, 우리는 ‘위로’와 ‘사랑’을 찾아 다른 것에 쉽게 눈을
                   돌리곤 합니다.
                 </Description>
                 <div style={{ height: '10px' }} />
-                <Description>막연하게, 어렴풋하게 알던</Description>
-                <Description>
+                <Description isMobile={isMobile}>
+                  막연하게, 어렴풋하게 알던
+                </Description>
+                <Description isMobile={isMobile}>
                   위로, 사랑, 지혜, 거룩.. 하나님 그분의 속성들, 그 가치가
                   명확해 질 때,
                 </Description>
-                <Description>
+                <Description isMobile={isMobile}>
                   우리는 삶에서 살아 움직이시는 하나님과 동행할 것입니다.
                 </Description>
-                <Description>
+                <Description isMobile={isMobile}>
                   다카이오쉬네는 막연하던 그 가치가 명확해지는 경험을
                   전달합니다.
                 </Description>

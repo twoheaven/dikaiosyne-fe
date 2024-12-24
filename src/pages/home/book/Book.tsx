@@ -21,7 +21,7 @@ const CardsContainer = styled.div<{ isMobile: boolean }>`
   align-items: center;
   gap: 16px;
   margin-top: ${(props) =>
-    props.isMobile ? '20px' : '-10%'}; /* 모바일에서는 약간의 여백 추가 */
+    props.isMobile ? '-20px' : '-10%'}; /* 모바일에서는 약간의 여백 추가 */
 `;
 
 const Book: React.FC = () => {
