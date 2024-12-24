@@ -116,6 +116,8 @@ const PrivacyPolicy: React.FC = () => {
         className="break-text"
         style={{
           marginTop: '60px',
+          padding: '20px',
+          fontFamily: 'Pretendard',
         }}
         dangerouslySetInnerHTML={{
           __html: privacyText.replace(/\n/g, '<br/>'),

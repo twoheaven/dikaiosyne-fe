@@ -310,6 +310,8 @@ const TermOfUse: React.FC = () => {
         className="break-text"
         style={{
           marginTop: '60px',
+          padding: '20px',
+          fontFamily: 'Pretendard',
         }}
         dangerouslySetInnerHTML={{
           __html: TOUText.replace(/\n/g, '<br/>'),
