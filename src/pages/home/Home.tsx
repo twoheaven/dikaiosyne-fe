@@ -21,7 +21,7 @@ const Button = styled.button`
   ); /* 베이지 톤의 그라데이션 */
   color: #3e2a47; /* 다크한 텍스트 색상 */
   border: none;
-  border-radius: 50px;
+  border-radius: 5px;
   font-size: 2rem;
   font-weight: bold;
   cursor: pointer;
