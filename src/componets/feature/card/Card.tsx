@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useIsMobile from '../../../hooks/useIsMobile';
 
 // Props 타입 정의
 interface CardProps {
@@ -9,6 +10,8 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
+  const isMobile = useIsMobile(); // 모바일 환경 여부 확인
+
   return (
     <div style={{ width: '40%' }}>
       <Link
@@ -16,19 +19,26 @@ const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
         style={{
           display: 'inline-block',
           backgroundColor: 'white',
-          aspectRatio: 1 / 1,
+          aspectRatio: '1/1',
           overflow: 'hidden', // 이미지가 넘칠 경우 자르기
           borderRadius: '16px', // 모서리 둥글게
           width: '100%',
           transition: 'transform 0.3s ease, box-shadow 0.3s ease', // 애니메이션 추가
+          boxShadow: isMobile ? '0px 4px 8px rgba(0, 0, 0, 0.2)' : 'none', // 모바일에서 항상 그림자
         }}
         onMouseEnter={(e) => {
-          e.currentTarget.style.transform = 'scale(1.05)'; // 마우스 오버 시 크기 확대
-          e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.15)'; // 그림자 추가
+          if (!isMobile) {
+            // 모바일이 아닌 경우에만 마우스 오버 시 효과 적용
+            e.currentTarget.style.transform = 'scale(1.05)';
+            e.currentTarget.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.15)';
+          }
         }}
         onMouseLeave={(e) => {
-          e.currentTarget.style.transform = 'scale(1)'; // 마우스 벗어나면 크기 원상복귀
-          e.currentTarget.style.boxShadow = 'none'; // 그림자 제거
+          if (!isMobile) {
+            // 모바일이 아닌 경우에만 마우스 벗어날 때 효과 제거
+            e.currentTarget.style.transform = 'scale(1)';
+            e.currentTarget.style.boxShadow = 'none';
+          }
         }}
       >
         <img
