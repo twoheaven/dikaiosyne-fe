@@ -39,7 +39,7 @@ const Input = styled.input`
 const Select = styled.select`
   padding: 10px;
   margin: 10px 0;
-  width: 320px;
+  width: 300px;
   border: 0.1px solid ${({ theme }) => theme.colors.border};
   border-radius: 1px;
   background: white;
