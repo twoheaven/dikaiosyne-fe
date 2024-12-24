@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import logo from '/src/assets/logo.svg';
 import { Link, useNavigate } from 'react-router-dom';
 import Paths from '../../../utils/paths';
+import Fonts from '../../../styles/font/font';
 
 const HeaderWrapper = styled.header`
   background-color: #ffc898; /* 반투명 배경색 설정 */
@@ -55,7 +56,7 @@ const Header = () => {
   };
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper style={{ fontFamily: Fonts.PRegular }}>
       <div className="logo-container">
         <Link to={Paths.Home}>
           <img src={logo} style={{ height: '40px' }} />

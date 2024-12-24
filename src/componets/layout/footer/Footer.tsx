@@ -4,8 +4,10 @@ import logo1 from '/src/assets/KakaoTalk_20241224_233352782.png';
 import logo2 from '/src/assets/KakaoTalk_20241224_233552424.png';
 import { Link } from 'react-router-dom';
 import useIsMobile from '../../../hooks/useIsMobile';
+import Fonts from '../../../styles/font/font';
 
 const FooterWrapper = styled.footer<{ isMobile: boolean }>`
+  font-family: 'Pretendard-Regular';
   display: ${(props) => (props.isMobile ? 'flex' : 'table-column')};
   flex-direction: ${(props) => (props.isMobile ? 'column' : 'initial')};
   justify-content: ${(props) => (props.isMobile ? 'center' : 'initial')};
@@ -30,7 +32,7 @@ const StyledLink = styled(Link)`
 const Footer = () => {
   const isMobile = useIsMobile();
   return (
-    <FooterWrapper isMobile={isMobile}>
+    <FooterWrapper isMobile={isMobile} style={{ fontFamily: Fonts.PRegular }}>
       <img
         src={logo1}
         style={{

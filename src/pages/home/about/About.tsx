@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import AboutImg from '/src/assets/about/파일 14_Ver 2.0.jpg';
 import useIsMobile from '../../../hooks/useIsMobile';
+import Fonts from '../../../styles/font/font';
 
 const Title = styled.h1`
   font-family: 'MaruBuriBold';
-
   font-size: 2rem;
   color: ${({ theme }) => theme.colors.primary};
 `;
@@ -15,8 +15,7 @@ interface DescriptionProps {
 }
 
 const Description = styled.p<DescriptionProps>`
-  font-family: 'Pretendard';
-
+  font-family: 'Pretendard-Regular';
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.text};
   text-align: ${({ isMobile }) =>
@@ -55,8 +54,10 @@ const About: React.FC = () => {
               textJustify: 'auto',
             }}
           >
-            <Title>dikaiosyne ; 디카이오쉬네</Title>
-            <div style={{ height: '20px' }} />
+            <Title style={{ fontFamily: Fonts.MaruBuriBold }}>
+              dikaiosyne ; 디카이오쉬네
+            </Title>
+            <div style={{ height: '20px', fontFamily: Fonts.PRegular }} />
             <Description isMobile={isMobile}>
               하나님의 말씀대로 살고자 하는 이들을 돕습니다.
             </Description>
