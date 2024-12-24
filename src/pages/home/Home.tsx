@@ -17,7 +17,7 @@ function Home() {
       <div id="about-section">
         <About />
       </div>
-      <div id="book-section">
+      <div id="book-section" style={{ width: '100%' }}>
         <Book />
       </div>
     </HomeWrapper>

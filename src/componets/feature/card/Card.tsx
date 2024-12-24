@@ -13,7 +13,16 @@ const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
   const isMobile = useIsMobile(); // 모바일 환경 여부 확인
 
   return (
-    <div style={{ width: '40%' }}>
+    <div
+      style={
+        isMobile
+          ? {
+              width: '70%',
+              maxWidth: '400px',
+            }
+          : { width: '40%', maxWidth: '400px' }
+      }
+    >
       <Link
         to={link}
         style={{
