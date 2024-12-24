@@ -44,6 +44,7 @@ const Footer = () => {
       />
       <div style={{ textAlign: isMobile ? 'center' : 'left' }}>
         <p>(주) 럽앤굿 모먼트 | 대표 : 민인애</p>
+        <p>사업자 번호 : 121-44-51585</p>
         <p>개인정보보호책임자 : 유선주</p>
         <p>E-MAIL : love.goodmoment@gmail.com</p>
         <p>&copy; 2024 dikaiosyne. All Rights Reserved.</p>
