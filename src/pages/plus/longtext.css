@@ -1,0 +1,3 @@
+.break-text {
+  white-space: pre; /* 텍스트 내의 줄 바꿈을 그대로 유지 */
+}

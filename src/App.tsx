@@ -8,6 +8,8 @@ import Home from './pages/home/Home';
 import { GlobalStyle } from './styles/global';
 import Book from './pages/book/Book';
 import ContactUs from './pages/contactus/ContactUs';
+import PrivacyPolicy from './pages/plus/PrivacyPolicy';
+import TermOfUse from './pages/plus/TermsOfUse';
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path={Paths.Book} element={<Book />} />
             <Route path={Paths.ContactUs} element={<ContactUs />} />
+            <Route path={Paths.Privacy} element={<PrivacyPolicy />} />
+            <Route path={Paths.TermsOfUse} element={<TermOfUse />} />
           </Route>
         </Routes>
       </Router>
