@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const PrivacyPolicy: React.FC = () => {
-  const [privacyText, setPrivacyText] = useState(
+  const [privacyText] = useState(
     `개인정보처리방침
 럽앤굿 모먼트는 (이하 '회사'는) 고객님의 개인정보를 중요시하며, "정보통신망 이용촉진 및
 정보보호"에 관한 법률을 준수하고 있습니다.

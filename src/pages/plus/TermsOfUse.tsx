@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const TermOfUse: React.FC = () => {
-  const [TOUText, setTOU] = useState(
+  const [TOUText] = useState(
     `이용약관
 제1조(목적)
 이 약관은 럽앤굿 모먼트(전자상거래 사업자)이 운영하는 럽앤굿모먼트(이하 "몰"이라 한다)에서
