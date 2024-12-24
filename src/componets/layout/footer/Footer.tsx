@@ -14,7 +14,7 @@ const FooterWrapper = styled.footer<{ isMobile: boolean }>`
   color: white;
   padding: 20px;
   text-align: ${(props) => (props.isMobile ? 'center' : 'left')};
-  height: 280px;
+  height: 300px;
 `;
 
 const StyledLink = styled(Link)`
