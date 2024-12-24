@@ -55,7 +55,7 @@ function Home() {
         <Book />
       </div>
       {/* 버튼 추가 */}
-      <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdrlOepQEgT9R_00g4u68Ow8egv6AuFX_OYeYWdYND_LHzbTw/viewform?usp=header">
+      <Link to="https://forms.gle/scgYSDWTmmXa8Xad8">
         <Button>구매하러 가기</Button>
       </Link>
     </HomeWrapper>
