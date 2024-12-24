@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import comfortImg from '/src/assets/comfort/KakaoTalk_Photo_2024-12-18-00-14-25 001.jpeg';
+import comfortImg from '/src/assets/book/KakaoTalk_20241224_215259548.png';
+import loveImg from '/src/assets/book/KakaoTalk_20241224_215259548_01.png';
 import Card from '../../../componets/feature/card/Card';
 import Paths from '../../../utils/paths';
 import useIsMobile from '../../../hooks/useIsMobile';
@@ -32,7 +33,7 @@ const Book: React.FC = () => {
         <Card link={Paths.Book} imgSrc={comfortImg} alt={'comfort'} />
         <div style={{ width: isMobile ? '0' : '3%' }} />{' '}
         {/* 모바일에서는 간격을 없애고 PC에서는 유지 */}
-        <Card link={Paths.Book} imgSrc={comfortImg} alt={'comfort'} />
+        <Card link={Paths.Book} imgSrc={loveImg} alt={'love'} />
       </CardsContainer>
     </BookWrapper>
   );

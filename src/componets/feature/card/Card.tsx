@@ -45,8 +45,8 @@ const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
           src={imgSrc}
           alt={alt}
           style={{
-            aspectRatio: '9/16',
-            width: '56.25%',
+            aspectRatio: '1/1',
+            width: '100%',
             objectFit: 'cover', // 비율 유지하며 채우기
           }}
         />

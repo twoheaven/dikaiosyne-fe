@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'BGBold';
+  src: url('./BookkGothic_Bold.ttf') format('truetype'); /* TTF */
+  /* OTF 파일일 경우 format('opentype') */
+}
+@font-face {
+  font-family: 'BGLight';
+  src: url('./BookkGothic_Light.ttf') format('truetype'); /* TTF */
+  /* OTF 파일일 경우 format('opentype') */
+}
+@font-face {
+  font-family: 'BMBold';
+  src: url('./BookkMyungjo_Bold.ttf') format('truetype'); /* TTF */
+  /* OTF 파일일 경우 format('opentype') */
+}
+@font-face {
+  font-family: 'BMLight';
+  src: url('./BookkMyungjo_Light.ttf') format('truetype'); /* TTF */
+  /* OTF 파일일 경우 format('opentype') */
+}

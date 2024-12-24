@@ -4,6 +4,8 @@ import useIsMobile from '../../hooks/useIsMobile';
 import emailjs from 'emailjs-com';
 
 const ContactWrapper = styled.div<{ isMobile: boolean }>`
+  font-family: 'BGBold';
+
   padding: 20px;
   text-align: center;
   margin-top: ${({ isMobile }) => (isMobile ? '20px' : '50px')};

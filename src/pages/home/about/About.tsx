@@ -4,6 +4,8 @@ import AboutImg from '/src/assets/about/파일 14_Ver 2.0.jpg';
 import useIsMobile from '../../../hooks/useIsMobile';
 
 const Title = styled.h1`
+  font-family: 'BMBold';
+
   font-size: 2rem;
   color: ${({ theme }) => theme.colors.primary};
 `;
@@ -13,6 +15,8 @@ interface DescriptionProps {
 }
 
 const Description = styled.p<DescriptionProps>`
+  font-family: 'BGBold';
+
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.text};
   text-align: ${({ isMobile }) =>
