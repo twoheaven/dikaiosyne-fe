@@ -33,7 +33,7 @@ const Book: React.FC = () => {
     <BookWrapper isMobile={isMobile}>
       <CardsContainer isMobile={isMobile}>
         <Card link={Paths.Comfort} imgSrc={comfortImg} alt={'comfort'} />
-        <Card link={Paths.Love} imgSrc={loveImg} alt={'love'} />
+        <Card link={Paths.Comfort} imgSrc={loveImg} alt={'love'} />
       </CardsContainer>
     </BookWrapper>
   );
