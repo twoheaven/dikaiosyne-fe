@@ -1,6 +1,6 @@
 enum Paths {
   Home = '/',
-  Book = '/book',
+  Comfort = '/comfort',
   ContactUs = '/contactus',
   Privacy = '/privacy',
   TermsOfUse = '/termsofuse',

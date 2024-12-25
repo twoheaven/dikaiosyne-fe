@@ -32,8 +32,8 @@ const Book: React.FC = () => {
   return (
     <BookWrapper isMobile={isMobile}>
       <CardsContainer isMobile={isMobile}>
-        <Card link={Paths.Book} imgSrc={comfortImg} alt={'comfort'} />
-        <Card link={Paths.Book} imgSrc={loveImg} alt={'love'} />
+        <Card link={Paths.Comfort} imgSrc={comfortImg} alt={'comfort'} />
+        <Card link={Paths.Love} imgSrc={loveImg} alt={'love'} />
       </CardsContainer>
     </BookWrapper>
   );

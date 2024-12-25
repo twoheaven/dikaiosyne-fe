@@ -6,10 +6,10 @@ import Paths from './utils/paths';
 import Layout from './componets/layout/Layout';
 import Home from './pages/home/Home';
 import { GlobalStyle } from './styles/global';
-import Book from './pages/book/Book';
 import ContactUs from './pages/contactus/ContactUs';
 import PrivacyPolicy from './pages/plus/PrivacyPolicy';
 import TermOfUse from './pages/plus/TermsOfUse';
+import Comfort from './pages/book/Comfort';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path={Paths.Home} element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path={Paths.Book} element={<Book />} />
+            <Route path={Paths.Comfort} element={<Comfort />} />
             <Route path={Paths.ContactUs} element={<ContactUs />} />
             <Route path={Paths.Privacy} element={<PrivacyPolicy />} />
             <Route path={Paths.TermsOfUse} element={<TermOfUse />} />
