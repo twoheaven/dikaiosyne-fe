@@ -19,7 +19,11 @@ const HeaderWrapper = styled.header`
     align-items: center;
     justify-content: flex-start; /* 왼쪽 정렬 */
     padding-left: 20px; /* 왼쪽 여백 */
-    width: 15%;
+    width: 10%;
+    /* 모바일 화면에서 왼쪽 여백 줄이기 */
+    @media (max-width: 768px) {
+      padding-left: 5px; /* 여백을 10px로 줄임 */
+    }
   }
 
   /* Home 링크를 가운데로 배치 */
@@ -27,7 +31,7 @@ const HeaderWrapper = styled.header`
     display: flex;
     gap: 10px;
     justify-content: center; /* 가운데 정렬 */
-    width: 70%;
+    width: 80%;
   }
 
   /* 링크 기본 스타일 제거 및 색상 설정 */
