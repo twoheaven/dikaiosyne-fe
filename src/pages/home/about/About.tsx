@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import AboutImg from '/src/assets/about/파일 14_Ver 2.0.jpg';
+import AboutImg from '/src/assets/about/KakaoTalk_20241226_084430876.jpg';
 import useIsMobile from '../../../hooks/useIsMobile';
 import Fonts from '../../../styles/font/font';
 
@@ -107,8 +107,9 @@ const About: React.FC = () => {
               alt="About"
               style={{
                 width: '27%',
-                aspectRatio: '3/4',
+                aspectRatio: '1/1',
                 marginLeft: '5%',
+                objectFit: 'cover',
               }}
             />
             <div style={{ width: '5%' }} />
