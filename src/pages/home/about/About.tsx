@@ -117,6 +117,7 @@ const About: React.FC = () => {
               style={{
                 textJustify: '-moz-initial',
                 alignContent: 'left',
+                marginTop: '1%',
               }}
             >
               <Title
