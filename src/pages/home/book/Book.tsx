@@ -33,7 +33,7 @@ const Button = styled.button`
   margin: 30px;
   background: ${({ theme }) =>
     theme.colors.primary}; /* 베이지 톤의 그라데이션 */
-  color: #3e2a47; /* 다크한 텍스트 색상 */
+  color: white; /* 다크한 텍스트 색상 */
   border: none;
   border-radius: 5px;
   font-size: 1.6rem;
@@ -77,7 +77,7 @@ const Book: React.FC = () => {
           {' '}
           ３０일 키워드 필사노트
           {isMobile && <br />} {/* 모바일에서 줄바꿈 */}
-          <span>ｓｅａｓｏｎ１ 。 ＷＩＮＴＥＲ</span>
+          <span>season 1. WINTER</span>
         </h2>
       </div>
       <CardsContainer isMobile={isMobile}>
