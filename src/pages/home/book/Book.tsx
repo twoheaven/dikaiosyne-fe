@@ -75,7 +75,7 @@ const Book: React.FC = () => {
           }}
         >
           {' '}
-          ３０일 키워드 필사노트
+          "３０일 키워드 필사노트"
           {isMobile && <br />} {/* 모바일에서 줄바꿈 */}
           <span>season 1. WINTER</span>
         </h2>
