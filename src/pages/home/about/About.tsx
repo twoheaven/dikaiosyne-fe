@@ -51,7 +51,7 @@ const About: React.FC = () => {
             }}
           >
             <Title style={{ fontFamily: Fonts.MaruBuriBold }}>
-              🌿디카이오쉬네 : dikaiosyne
+              디카이오시네 : dikaiosyne
             </Title>
             <div
               style={{
@@ -126,7 +126,7 @@ const About: React.FC = () => {
                   fontFamily: Fonts.MaruBuriBold,
                 }}
               >
-                🌿디카이오쉬네 : dikaiosyne
+                디카이오시네 : dikaiosyne
               </Title>
               <div style={{ height: '20px' }}></div>
               <div
