@@ -13,6 +13,7 @@ const BookWrapper = styled.div<{ isMobile: boolean }>`
   aspect-ratio: ${(props) => (props.isMobile ? '2' : '2.5/1')};
   background-color: wheat;
   width: 100%;
+  flex-direction: column;
 `;
 
 const CardsContainer = styled.div<{ isMobile: boolean }>`
@@ -31,6 +32,19 @@ const Book: React.FC = () => {
 
   return (
     <BookWrapper isMobile={isMobile}>
+      <div
+        style={{
+          marginBottom: isMobile ? '0px' : '60px',
+          marginTop: isMobile ? '30px' : '0px',
+        }}
+      >
+        <h2>
+          {' '}
+          ３０일 키워드 필사노트
+          {isMobile && <br />} {/* 모바일에서 줄바꿈 */}
+          <span>ｓｅａｓｏｎ１ 。 ＷＩＮＴＥＲ</span>
+        </h2>
+      </div>
       <CardsContainer isMobile={isMobile}>
         <Card link={Paths.Comfort} imgSrc={comfortImg} alt={'comfort'} />
         <Card link={Paths.Comfort} imgSrc={loveImg} alt={'love'} />
