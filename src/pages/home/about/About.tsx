@@ -18,7 +18,7 @@ const Description = styled.p<DescriptionProps>`
   font-family: 'Pretendard-Regular';
   font-size: 1rem;
   color: ${({ theme }) => theme.colors.text};
-  text-align: 'left'; /* 모바일일 경우 center, 아니면 left */
+  text-align: ${({ isMobile }) => (isMobile ? 'center' : 'left')};
 `;
 
 const AboutWrapper = styled.div`
@@ -50,9 +50,8 @@ const About: React.FC = () => {
               padding: '20px',
             }}
           >
-            <Title style={{ fontFamily: Fonts.MaruBuriBold }}>dikaiosyne</Title>
             <Title style={{ fontFamily: Fonts.MaruBuriBold }}>
-              ; 디카이오쉬네
+              🌿디카이오쉬네 : dikaiosyne
             </Title>
             <div
               style={{
@@ -62,32 +61,34 @@ const About: React.FC = () => {
                 marginTop: '20px',
               }}
             >
-              <Description isMobile={isMobile}>
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
                 하나님의 말씀대로 살고자 하는 이들을 돕습니다.
               </Description>
-              <Description isMobile={isMobile}>
-                하나님 그 분은 그분 자체가 ‘위로’이시고
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+                하나님을 너무나 사랑하고 열정이 있지만 실제 삶에서 그 열정을
+                지켜내기 위한 힘이 부족할 때,
               </Description>
-              ‘사랑’이신 것을 압니다.
-              <Description isMobile={isMobile}>
-                하지만, 우리는 ‘위로’와 ‘사랑’을 찾아
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+                실제적인 믿음을 발휘하기 위한 가치들을 담은 제품을 만듭니다.
               </Description>
-              다른 것에 쉽게 눈을 돌리곤 합니다.
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+                감정과 막연함이 아닌 말씀을 기준으로 실제적인 믿음을
+                발휘해보세요!
+              </Description>
               <div style={{ height: '12px' }} />
-              <Description isMobile={isMobile}>
-                막연하게, 어렴풋하게 알던 위로, 사랑, 지혜, 거룩..
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+                사랑, 공의, 지혜, 긍휼 등 하나님의 성품과 속성들..
               </Description>
-              <Description isMobile={isMobile}>
-                하나님 그분의 속성들, 그 가치가 명확해 질 때,
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+                우리 안에서 그 가치들이 명확해 질 때,
               </Description>
-              <Description isMobile={isMobile}>
-                우리는 삶에서 살아 움직이시는
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+                우리 삶에서 살아 움직이시는 하나님과 동행할 것입니다.
               </Description>
-              하나님과 동행할 것입니다.
-              <Description isMobile={isMobile}>
-                다카이오쉬네는 막연하던 그 가치가
+              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+                다카이오쉬네는 막연하던 그 기독교적 가치들이 명확해지는 경험을
+                전달합니다.
               </Description>
-              명확해지는 경험을 전달합니다.
             </div>
           </div>
         </div>
@@ -103,17 +104,18 @@ const About: React.FC = () => {
           >
             <img
               src={AboutImg}
+              alt="About"
               style={{
                 width: '27%',
                 aspectRatio: '3/4',
                 marginLeft: '5%',
               }}
             />
-            <div style={{ width: '4%' }} />
+            <div style={{ width: '5%' }} />
             <div
               style={{
                 textJustify: '-moz-initial',
-                alignContent: 'center',
+                alignContent: 'left',
               }}
             >
               <Title
@@ -122,7 +124,7 @@ const About: React.FC = () => {
                   fontFamily: Fonts.MaruBuriBold,
                 }}
               >
-                dikaiosyne ; 디카이오쉬네
+                🌿디카이오쉬네 : dikaiosyne
               </Title>
               <div style={{ height: '20px' }}></div>
               <div
@@ -135,26 +137,28 @@ const About: React.FC = () => {
                   하나님의 말씀대로 살고자 하는 이들을 돕습니다.
                 </Description>
                 <Description isMobile={isMobile}>
-                  하나님 그 분은 그분 자체가 ‘위로’이시고 ‘사랑’이신 것을
-                  압니다.
+                  하나님을 너무나 사랑하고 열정이 있지만 실제 삶에서 그 열정을
+                  지켜내기 위한 힘이 부족할 때,
                 </Description>
                 <Description isMobile={isMobile}>
-                  하지만, 우리는 ‘위로’와 ‘사랑’을 찾아 다른 것에 쉽게 눈을
-                  돌리곤 합니다.
+                  실제적인 믿음을 발휘하기 위한 가치들을 담은 제품을 만듭니다.
+                </Description>
+                <Description isMobile={isMobile}>
+                  감정과 막연함이 아닌 말씀을 기준으로 실제적인 믿음을
+                  발휘해보세요!
                 </Description>
                 <div style={{ height: '10px' }} />
                 <Description isMobile={isMobile}>
-                  막연하게, 어렴풋하게 알던
+                  사랑, 공의, 지혜, 긍휼 등 하나님의 성품과 속성들..
                 </Description>
                 <Description isMobile={isMobile}>
-                  위로, 사랑, 지혜, 거룩.. 하나님 그분의 속성들, 그 가치가
-                  명확해 질 때,
+                  우리 안에서 그 가치들이 명확해 질 때,
                 </Description>
                 <Description isMobile={isMobile}>
-                  우리는 삶에서 살아 움직이시는 하나님과 동행할 것입니다.
+                  우리 삶에서 살아 움직이시는 하나님과 동행할 것입니다.
                 </Description>
                 <Description isMobile={isMobile}>
-                  다카이오쉬네는 막연하던 그 가치가 명확해지는 경험을
+                  다카이오쉬네는 막연하던 그 기독교적 가치들이 명확해지는 경험을
                   전달합니다.
                 </Description>
               </div>
