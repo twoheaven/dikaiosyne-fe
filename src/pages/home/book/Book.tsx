@@ -38,7 +38,11 @@ const Book: React.FC = () => {
           marginTop: isMobile ? '30px' : '0px',
         }}
       >
-        <h2>
+        <h2
+          style={{
+            fontFamily: 'MaruBuriBold',
+          }}
+        >
           {' '}
           ３０일 키워드 필사노트
           {isMobile && <br />} {/* 모바일에서 줄바꿈 */}
@@ -46,8 +50,18 @@ const Book: React.FC = () => {
         </h2>
       </div>
       <CardsContainer isMobile={isMobile}>
-        <Card link={Paths.Comfort} imgSrc={comfortImg} alt={'comfort'} />
-        <Card link={Paths.Comfort} imgSrc={loveImg} alt={'love'} />
+        <Card
+          link={Paths.Comfort}
+          imgSrc={comfortImg}
+          alt={'comfort'}
+          name={'위로'}
+        />
+        <Card
+          link={Paths.Comfort}
+          imgSrc={loveImg}
+          alt={'love'}
+          name={'사랑'}
+        />
       </CardsContainer>
     </BookWrapper>
   );

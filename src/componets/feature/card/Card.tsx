@@ -1,15 +1,14 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import useIsMobile from '../../../hooks/useIsMobile';
 
-// Props 타입 정의
 interface CardProps {
   link: string; // Link의 경로
   imgSrc: string; // img 태그의 경로
   alt: string; // alt
+  name: string;
 }
 
-const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
+const Card: React.FC<CardProps> = ({ link, imgSrc, alt, name }) => {
   const isMobile = useIsMobile(); // 모바일 환경 여부 확인
 
   return (
@@ -19,8 +18,13 @@ const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
           ? {
               width: '70%',
               maxWidth: '400px',
+              textAlign: 'center', // 텍스트 중앙 정렬
             }
-          : { width: '40%', maxWidth: '400px' }
+          : {
+              width: '40%',
+              maxWidth: '400px',
+              textAlign: 'center', // 텍스트 중앙 정렬
+            }
       }
     >
       <Link
@@ -60,6 +64,17 @@ const Card: React.FC<CardProps> = ({ link, imgSrc, alt }) => {
           }}
         />
       </Link>
+      {/* 카드 아래에 텍스트 추가 */}
+      <p
+        style={{
+          marginTop: '8px', // 이미지와 텍스트 사이 간격
+          fontSize: isMobile ? '14px' : '16px', // 반응형 텍스트 크기
+          color: '#333', // 텍스트 색상
+          fontFamily: 'Pretendard-Bold',
+        }}
+      >
+        {name}
+      </p>
     </div>
   );
 };
