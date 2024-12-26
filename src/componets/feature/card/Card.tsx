@@ -70,7 +70,7 @@ const Card: React.FC<CardProps> = ({ link, imgSrc, alt, name }) => {
           marginTop: '8px', // 이미지와 텍스트 사이 간격
           fontSize: isMobile ? '14px' : '16px', // 반응형 텍스트 크기
           color: '#333', // 텍스트 색상
-          fontFamily: 'Pretendard-Bold',
+          fontFamily: 'MaruBuriBold',
         }}
       >
         {name}

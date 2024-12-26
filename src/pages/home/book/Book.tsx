@@ -101,6 +101,7 @@ const Book: React.FC = () => {
           style={{
             marginTop: isMobile ? '0px' : '30px',
             marginBottom: isMobile ? '30px' : '60px',
+            fontFamily: 'Pretendard-Bold',
           }}
         >
           구매하러 가기

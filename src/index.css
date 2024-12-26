@@ -1,5 +1,7 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Pretendard-Regular, Pretendard-Medium, Pretendard-Bold, MaruBuri,
+    MaruBuriSemiBold, MaruBuriBold, MaruBuriLight, MaruBuriExtraLight, Inter,
+    system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -14,15 +16,6 @@
 
   /* 맥 OS에서 폰트 스무딩 활성화 */
   -moz-osx-font-smoothing: grayscale;
-
-  --font-p-regular: 'Pretendard-Regular';
-  --font-p-medium: 'Pretendard-Medium';
-  --font-p-bold: 'Pretendard-Bold';
-  --font-maru-regular: 'MaruBuri';
-  --font-maru-bold: 'MaruBuriBold';
-  --font-maru-light: 'MaruBuriLight';
-  --font-maru-semi-bold: 'MaruBuriSemiBold';
-  --font-maru-extra-light: 'MaruBuriExtraLight';
 }
 
 a {
