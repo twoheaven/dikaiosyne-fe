@@ -57,35 +57,35 @@ const About: React.FC = () => {
               style={{
                 fontFamily: 'Pretendard-Regular',
                 justifyContent: 'left',
-                textAlign: 'left',
+                textAlign: 'center',
                 marginTop: '20px',
               }}
             >
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 하나님의 말씀대로 살고자 하는 이들을 돕습니다.
               </Description>
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 하나님을 너무나 사랑하고 열정이 있지만 실제 삶에서 그 열정을
                 지켜내기 위한 힘이 부족할 때,
               </Description>
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 실제적인 믿음을 발휘하기 위한 가치들을 담은 제품을 만듭니다.
               </Description>
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 감정과 막연함이 아닌 말씀을 기준으로 실제적인 믿음을
                 발휘해보세요!
               </Description>
               <div style={{ height: '12px' }} />
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 사랑, 공의, 지혜, 긍휼 등 하나님의 성품과 속성들..
               </Description>
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 우리 안에서 그 가치들이 명확해 질 때,
               </Description>
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 우리 삶에서 살아 움직이시는 하나님과 동행할 것입니다.
               </Description>
-              <Description isMobile={isMobile} style={{ textAlign: 'left' }}>
+              <Description isMobile={isMobile} style={{ textAlign: 'center' }}>
                 다카이오쉬네는 막연하던 그 기독교적 가치들이 명확해지는 경험을
                 전달합니다.
               </Description>
