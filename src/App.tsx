@@ -10,6 +10,7 @@ import ContactUs from './pages/contactus/ContactUs';
 import PrivacyPolicy from './pages/plus/PrivacyPolicy';
 import TermOfUse from './pages/plus/TermsOfUse';
 import Comfort from './pages/book/Comfort';
+import Love from './pages/book/Love';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
             <Route path={Paths.ContactUs} element={<ContactUs />} />
             <Route path={Paths.Privacy} element={<PrivacyPolicy />} />
             <Route path={Paths.TermsOfUse} element={<TermOfUse />} />
+            <Route path={Paths.Love} element={<Love />} />
           </Route>
         </Routes>
       </Router>

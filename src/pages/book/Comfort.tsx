@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import comfortImg1 from '/src/assets/book/1인트로-100.jpg';
-import comfortImg2 from '/src/assets/book/230일 키워드 필사노트 소개-100.jpg';
-import comfortImg3 from '/src/assets/book/3위로-100.jpg';
-import comfortImg4 from '/src/assets/book/4가격-100.jpg';
+import comfortImg1 from '/src/assets/comfort/1인트로-100.jpg';
+import comfortImg2 from '/src/assets/comfort/230일 키워드 필사노트 소개-100.jpg';
+import comfortImg3 from '/src/assets/comfort/3위로-100.jpg';
+import comfortImg4 from '/src/assets/comfort/4가격-100.jpg';
 import { Link } from 'react-router-dom';
 import useIsMobile from '../../hooks/useIsMobile';
 

@@ -4,6 +4,7 @@ enum Paths {
   ContactUs = '/contactus',
   Privacy = '/privacy',
   TermsOfUse = '/termsofuse',
+  Love = '/love',
 }
 
 export default Paths;

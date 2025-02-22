@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import comfortImg from '/src/assets/book/KakaoTalk_20241224_215259548.png';
-import loveImg from '/src/assets/book/KakaoTalk_20241224_215259548_01.png';
+import comfortImg from '/src/assets/comfort/KakaoTalk_20241224_215259548.png';
+import loveImg from '/src/assets/love/사랑 썸네일.png';
 import Card from '../../../componets/feature/card/Card';
 import Paths from '../../../utils/paths';
 import useIsMobile from '../../../hooks/useIsMobile';
@@ -87,12 +87,7 @@ const Book: React.FC = () => {
           alt={'comfort'}
           name={'위로'}
         />
-        <Card
-          link={Paths.Comfort}
-          imgSrc={loveImg}
-          alt={'love'}
-          name={'사랑'}
-        />
+        <Card link={Paths.Love} imgSrc={loveImg} alt={'love'} name={'사랑'} />
       </CardsContainer>
 
       {/* 버튼 추가 */}
