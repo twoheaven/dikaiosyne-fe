@@ -87,7 +87,7 @@ const Love: React.FC = () => {
       />
 
       {/* 버튼 추가 */}
-      <Link to="https://forms.gle/scgYSDWTmmXa8Xad8">
+      <Link to="https://smartstore.naver.com/dikaiosyne/products/11321190031">
         <Button
           style={{
             marginTop: isMobile ? '30px' : '60px',
